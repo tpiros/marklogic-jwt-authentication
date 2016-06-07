@@ -1,5 +1,7 @@
 #Securing a REST API using JWT and marklogic
 
+> Please note that the project requires you to have Node.js v6 or above.
+
 ##Setup project
 Before setting up the project please make sure that the details in `settings.js` match the settings of your environment, if not, please update as necessary:
 
