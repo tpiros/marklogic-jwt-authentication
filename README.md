@@ -12,14 +12,16 @@ const host = 'localhost';
 const port = 8000;
 ```
 
-To insert the initial dataset to the database you can execute `npm run setup`
+The first step would be to install the project dependencies by executing `npm i`.
 
-> To delete all the documents that have been inserted via the installation please run `npm run delete`
+To insert the initial dataset to the database you can execute `npm run setup`.
+
+> To delete all the documents that have been inserted via the installation please run `npm run delete`.
 
 ##Token creation
-To create a token please run `npm run createToken`
+To create a token please run `npm run createToken`.
 
 ##Start the application
-To start the application itself please run `npm start`
+To start the application itself please run `npm start`.
 
 > Development mode is enabled if you start the application using `npm run startDev`. Development mode uses `nodemon` to start the application.
