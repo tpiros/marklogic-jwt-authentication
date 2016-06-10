@@ -13,7 +13,7 @@ const port = 8000;
 ```
 
 > Please note that an out-of-box MarkLogic installation will have a REST API instance running on port 8000.
-
+g
 The first step would be to install the project dependencies by executing `npm i`.
 
 To insert the initial dataset to the database you can execute `npm run setup`.
@@ -27,3 +27,6 @@ To create a token please run `npm run createToken`.
 To start the application itself please run `npm start`.
 
 > Development mode is enabled if you start the application using `npm run startDev`. Development mode uses `nodemon` to start the application.
+
+##Accessing the secured endpoint
+The easist way to access the secured endpoint is to use the following curl statement: `curl -H 'Authorization: Bearer [access_token]' http://localhost:8080/api/characters` where `[access_token]` is the token created using the previous step.
