@@ -30,3 +30,6 @@ To start the application itself please run `npm start`.
 
 ##Accessing the secured endpoint
 The easist way to access the secured endpoint is to use the following curl statement: `curl -H 'Authorization: Bearer [access_token]' http://localhost:8080/api/characters` where `[access_token]` is the token created using the previous step.
+
+##Further information
+For further information please visit: [http://developer.marklogic.com/blog/securing-a-rest-api](http://developer.marklogic.com/blog/securing-a-rest-api)
