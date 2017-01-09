@@ -14,9 +14,9 @@ app.set('port', 8080);
 app.use('/', router);
 
 const authenticate = (req, res, next) => {
-  let authHeader = req.headers.authorization;
+  const authHeader = req.headers.authorization;
   if (authHeader) {
-    let token = authHeader.split(' ')[1];
+    const token = authHeader.split(' ')[1];
     jwt.verify(token, 's3cr3t', (error, decoded) => {
       if (error) {
         console.log(error);
@@ -39,7 +39,7 @@ const characters = (req, res) => {
       ).slice(0,100)
     ).result()
     .then((response) => {
-      let characterNames = response.map((character) => {
+      const characterNames = response.map((character) => {
         return character.content.name;
       });
       res.json(characterNames);
@@ -57,7 +57,7 @@ const vehicles = (req, res) => {
     ).slice(0,100)
   ).result()
   .then((response) => {
-    let vehicleNames = response.map((vehicle) => {
+    const vehicleNames = response.map((vehicle) => {
       return vehicle.content.name;
     });
     res.json(vehicleNames);

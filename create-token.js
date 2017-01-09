@@ -17,10 +17,10 @@ db.documents.write({
   return db.documents.read('/user/tamas.json').result()
 })
 .then((response) => {
-  let secret = 's3cr3t';
-  let expire = 3600;
-  let tokenValue = { username: response[0].content.name };
-  let token = jwt.sign(tokenValue, secret, { expiresIn: expire });
+  const secret = 's3cr3t';
+  const expire = 3600;
+  const tokenValue = { username: response[0].content.name };
+  const token = jwt.sign(tokenValue, secret, { expiresIn: expire });
   console.log('** TOKEN **');
   console.log(token);
   console.log('** Copy line below for the Authorization header **');
